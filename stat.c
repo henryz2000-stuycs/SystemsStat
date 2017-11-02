@@ -36,8 +36,9 @@ int main(){
 
   printf("size of file: %lu\n", get_file_size("file1.test"));
   printf("permissions of file: %o\n", get_file_permissions("file1.test"));
+  printf("NOTE: file1.test is accessed each time the file is run, file2.test isn't\n");
   printf("last access time of file1.test: %s\n", get_file_accesstime("file1.test"));
-  printf("last access time of file2.test: %s\n", get_file_accesstime("test"));
+  printf("last access time of file2.test: %s\n", get_file_accesstime("file2.test"));
 
   return 0;
 }
